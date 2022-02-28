@@ -28,8 +28,11 @@ body {
     font-weight: 700;
     font-size: 40px;
     color: #362015;
-    background-color: #93734f;
     max-width: 100%;
+    background-color: #93734f;
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -52,8 +55,9 @@ body {
 .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    border: 1px solid red;
 }
 
 .logo {
@@ -65,7 +69,8 @@ body {
 }
 
 .lang-switcher {
-    width: 200px;
+    max-width: 200px;
+    border: 1px solid blue;
 }
 
 .lang {
