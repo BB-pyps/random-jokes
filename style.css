@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #362015;
+    background-color: #93734f;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1440px;
+    padding:0 20px;
+    margin: 0 auto;
+}
+
+    @media (max-width: 480px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:0 10px;
+            width: 480px;
+        }
+    }
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Comforter', cursive;
+    font-weight: 400;
+    font-size: 70px;
+    text-shadow: #f2a120 5px 5px 5px,
+    #fcf4ae  -5px -5px 5px;
+}
+
+.lang-switcher {
+    width: 200px;
+}
+
+.lang {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 3px solid #f2a120;
+    border-radius: 10px;
+    color: #362015;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    box-shadow: #f2a120 inset 0 0 40px,
+    #f2a120 inset -5px -5px 10px,
+    #f2a120 inset 5px 5px 10px;
+    cursor: pointer;
+    transition: 500ms;
+    align-self: center;
+}
+
+.lang:hover {
+    box-shadow: #fcf4ae 0 0 50px;
+}
+
+.lang:active {
+    transform: scale(1.4);
+}
+
+.active-lang {
+    border: 3px solid #362015;
+}
+.main-content {
+    flex: 1 0 auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.tv-set {
+    position: relative;
+    width:510px;
+    height: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url('./assets/tv-clip-art-5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    @media (max-width: 480px) {
+        .tv-set  {
+            width:calc(100% -20px);
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+.author-quote-gif {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    width: 493px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+    @media (max-width: 425px) {
+        .quote-container {
+            height: 300px;
+        }
+    }
+
+.quote {
+    text-align: center;
+    quotes: none;
+}
+
+.author {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 50px;
+    border: 3px solid #362015;
+    border-radius: 10px;
+    color: #362015;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    box-shadow: #f2a120 inset 0 0 40px,
+    #f2a120 inset -5px -5px 10px,
+    #f2a120 inset 5px 5px 10px;
+    cursor: pointer;
+    transition: 500ms;
+    align-self: center;
+}
+
+.button:hover {
+    box-shadow: #fcf4ae 0 0 50px;
+}
+
+.button:active {
+    transform: scale(1.4);
+}
+
+.footer {
+    padding: 10px;
+    flex: 0 0 20%;
+}
+
+.copyright {
+    display: flex;
+    padding: 20px 20px;
+    margin-left: auto;
+    max-width: 500px;
+    justify-content: space-between;
+    align-content: flex-end;
+    font-size: 30px;
+    color: 	#f5c036;
+    word-spacing: 0;
+}
+
+@media (max-width: 480px) {
+    .copyright  {
+       margin: 0 auto;
+       width: 320px;
+    }
+}
+
+.link {
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-shadow:
+    #fcf7bd -10px 10px 5px,
+    #fcf7bd 10px -10px 5px,
+    #f5c036 0 0 50px;
+}
+
+.link:active {
+    transform: scale(1.4);
+}
+
+.school-link:hover {
+    border-radius: 10px;
+    box-shadow:
+    #fcf7bd 0 0 40px,
+    #f5c036 0 0 30px;
+}
+
+.school-link {
+    background-color: transparent;
+}
